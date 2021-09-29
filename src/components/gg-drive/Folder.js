@@ -7,15 +7,15 @@ import { Button } from 'react-bootstrap'
 export default function Folder({ folder }) {
     return (
         <Button
-         to={{
+         to={{ 
             pathname: `/folder/${folder.id}`,
-            state: { folder: folder },
+            state: { folder: folder }, 
          }}
          variant="outline-dark" 
          className="text-truncate w-100" 
          as={Link}
         >
-            <FontAwesomeIcon icon={faFolder} className="mr-2" /> { folder.name }
+            <FontAwesomeIcon icon={faFolder} className="mr-4" /> { folder.name }
         </Button>
     )
 }
