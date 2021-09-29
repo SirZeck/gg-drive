@@ -1,4 +1,4 @@
-# Auth-It React App
+# gg-drive React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
