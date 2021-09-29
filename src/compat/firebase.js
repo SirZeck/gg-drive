@@ -16,6 +16,9 @@ const firestore = app.firestore()
 export const database = {
     folder: firestore.collection('folders'),
     files: firestore.collection('files'),
+    formatDoc: doc => {
+        return { id: doc.id, ...doc.data()}
+    },
     getCurrentTimestamp: firebase.firestore.FieldValue.serverTimestamp
 }
 
